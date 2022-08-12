@@ -1,14 +1,13 @@
 //variable
 const courses = document.querySelector("#courses-list"),
-    shoppingCartContent = document.querySelector("#cart-content tbody"),
-    clearCartBtn = document.querySelector('#clear-cart');
+      shoppingCartContent = document.querySelector("#cart-content tbody"),
+      clearCartBtn = document.querySelector('#clear-cart');
 
 //listeners
-
 loadEventListeners();
 
 function loadEventListeners() {
-    //when  a nre course is added
+    //when  a new course is added
     courses.addEventListener("click", buyCourse);
 
     //when the remove button is clicked
@@ -78,9 +77,7 @@ function saveIntoStorage(course) {
 
 //get the contents from storage
 function getCoursesFromStorage() {
-
     let courses;
-
     //if something exist on storage then we get the value, otherwise
     //create an empty array
 
@@ -123,11 +120,9 @@ function removeCourseLocalStorage(id){
 //clear the shopping cart
 function clearCart() {
     // shoppingCartContent.innerHTML = ''
-
     while (shoppingCartContent.firstChild) {
         shoppingCartContent.removeChild(shoppingCartContent.firstChild);
     }
-
     //clear from local storage
     clearLocalStorage();
 }
@@ -145,7 +140,6 @@ function getFromLocalStorage() {
         let { image, title, price, id } = course;
         //create the <tr>
         const row = document.createElement('tr');
-
         //print the content
         row.innerHTML = `
         <td>
@@ -157,7 +151,6 @@ function getFromLocalStorage() {
         <a href="#" class="remove" data-id="${id}">x</a>
         </td>
         `;
-
         shoppingCartContent.append(row)
     });
 }
