@@ -4,7 +4,7 @@
 
 
 ### Tweets
-Small crud with the functionality to save the tweets in the browser with local Storage
+- Small crud with the functionality to save the tweets in the browser with local Storage
 
 ### Shopping Cart
 - User can add courses into the shopping cart.
@@ -16,3 +16,9 @@ Small crud with the functionality to save the tweets in the browser with local S
 ### Simulate Email Sending App
 - Validate the form fields
 - When  submitting the form an spinner should be displayed
+
+### Car Insurance Online Quotation
+- 3 Different Car Models, each will return different prices
+- Each year the cost of the insurance should decrease #%
+- Basic and complete coverage will have different prices
+- Must be developed with Prototypes and then migrate to Classes
